@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(230,230,230);
+}
+
+.tarefas{
+    margin: 30px auto;
+    max-width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.tarefas p{
+    margin: 20px auto;
+}
+
+.tarefa{
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 50%;
+    height: 5%;
+    outline: 0px;
+    padding: 10px;
+}
+
+.acao{
+    outline: 0px;
+    border: none;
+    background-color: white;
+    margin: 0 auto;
+    padding: 3px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+

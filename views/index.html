@@ -1,7 +1,28 @@
 <html>
     
+    <head>
+        <title>Lista de tarefas | Projeto 01</title>
+        <link href="/public/style.css" rel="stylesheet" />
+    </head>
+
     <body>
-        <h1>Olá <%= nome %>!</h1>
+        <div class="tarefas">
+            <form method="post">
+                <input type="text" name="tarefa" class="tarefa"/>
+                
+                <button class="acao" type="submit">
+                    <img src="/public/img/plus.png">
+                </button>                
+            </form>
+
+
+
+            <% for (let i = 0; i < tarefasList.length; i++){ %>
+                
+                <p><%= tarefasList[i] %>  <a href="/delete/<%= i %>"><img src="/public/img/delete.png"></a> </p>
+
+            <% } %>     
+        </div>
     </body>
 
 </html>
